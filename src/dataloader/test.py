@@ -60,7 +60,7 @@ class GigaPoseTestSet(GigaPoseTrainSet):
         self.model_name = 'models'
         self.split = 'val' # TODO. val when training, test when testing
         self.batch_size = batch_size
-        self.root_dir = Path('/nas/project_data/RTDT')
+        self.root_dir = Path('./gigaPose_datasets/datasets/')
         self.dataset_name = dataset_name
         self.transforms = transforms
         if self.transforms.rgb_augmentation:

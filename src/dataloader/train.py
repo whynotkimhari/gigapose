@@ -52,7 +52,7 @@ class GigaPoseTrainSet:
         transforms,
     ):
         self.batch_size = batch_size
-        self.dataset_dir = Path('/nas/project_data/RTDT') / dataset_name
+        self.dataset_dir = Path('./gigaPose_datasets/datasets/') / dataset_name
         self.transforms = transforms
         if self.transforms.rgb_augmentation:
             self.transforms.rgb_transform.transform = [
@@ -66,7 +66,7 @@ class GigaPoseTrainSet:
         self.web_dataloader = IterableWebSceneDataset(web_dataset)
 
         # load the template dataset
-        model_infos = inout.load_json(self.dataset_dir / "models" / "models_info.json")
+        model_infos = inout.load_json(self.dataset_dir.parent / "models" / "models_info.json")
 
         template_config.dir += f"/{dataset_name}"
         self.template_dataset = TemplateDataset.from_config(

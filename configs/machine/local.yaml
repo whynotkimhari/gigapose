@@ -1,0 +1,15 @@
+name: local
+
+# specific attributes to this machine
+# batch_size: 128
+# batch_size: 32 # GPU
+# num_workers: 0 # CPU
+batch_size: 12
+num_workers: 2
+log_interval: ${model.log_interval}
+# Define trainer, datasets
+defaults:
+  - trainer: local
+
+dryrun: False
+root_dir: ${user.local_root_dir}

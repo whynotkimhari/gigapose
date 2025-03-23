@@ -21,7 +21,7 @@ train_dataset_names = {0: ["gso"], 1: ["shapenet"], 2: ["gso", "shapenet"], 3: [
 def run_train(cfg: DictConfig):
     OmegaConf.set_struct(cfg, False)
     logger.info(f"Checkpoints will be stored in: {cfg.callback.checkpoint.dirpath}")
-
+    cfg.model.test_dataset_name = train_dataset_names[cfg.train_dataset_id]
     logger.info("Initializing logger, callbacks and trainer")
     cfg_trainer = cfg.machine.trainer
     if "WandbLogger" in cfg_trainer.logger._target_:

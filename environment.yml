@@ -1,107 +1,53 @@
 name: gigapose
 channels:
+  - xformers
+  - pytorch
+  - nvidia
   - conda-forge
+  - defaults
 dependencies:
-  - _libgcc_mutex=0.1
-  - _openmp_mutex=4.5
-  - assimp=5.3.1
-  - bzip2=1.0.8
-  - ca-certificates=2024.12.14
-  - console_bridge=1.0.2
-  - eigen=3.4.0
-  - eigenpy=3.1.0
-  - hpp-fcl=2.3.6
-  - icu=73.2
-  - ld_impl_linux-64=2.43
-  - libblas=3.9.0
-  - libboost=1.82.0
-  - libboost-devel=1.82.0
-  - libboost-headers=1.82.0
-  - libboost-python=1.82.0
-  - libboost-python-devel=1.82.0
-  - libcblas=3.9.0
-  - libffi=3.3
-  - libgcc=14.2.0
-  - libgcc-ng=14.2.0
-  - libgfortran=14.2.0
-  - libgfortran5=14.2.0
-  - libgomp=14.2.0
-  - liblapack=3.9.0
-  - liblzma=5.6.3
-  - liblzma-devel=5.6.3
-  - libopenblas=0.3.28
-  - libsqlite=3.46.0
-  - libstdcxx=14.2.0
-  - libstdcxx-ng=14.2.0
-  - libzlib=1.2.13
-  - llvm-openmp=19.1.7
-  - ncurses=6.5
-  - numpy=1.26.4
-  - octomap=1.9.8
-  - openssl=1.1.1w
-  - pandas=2.2.3
-  - pinocchio=2.6.20
-  - pip=23.0
+  - pip==23
   - python=3.9.6
-  - python-dateutil=2.9.0.post0
-  - python-tzdata=2025.1
-  - python_abi=3.9
-  - pytz=2024.1
-  - qhull=2020.2
-  - readline=8.2
-  - setuptools=75.8.0
-  - six=1.17.0
-  - sqlite=3.46.0
-  - tinyxml=2.6.2
-  - tk=8.6.13
-  - tzdata=2025a
-  - urdfdom=3.1.1
-  - urdfdom_headers=1.1.2
-  - wheel=0.45.1
-  - xz=5.6.3
-  - xz-gpl-tools=5.6.3
-  - xz-tools=5.6.3
-  - zlib=1.2.13
-  - zstd=1.5.6
   - pip:
-    - blenderproc==2.8.0
-    - bokeh==3.4.3
-    - distinctipy==1.3.4
-    - einops==0.8.0
-    - ffmpeg==1.4
-    - fvcore==0.1.5.post20221221
-    - gdown==5.2.0
-    - hydra-colorlog==1.2.0
-    - hydra-core==1.3.2
-    - iopath==0.1.10
+    - pandas
+    - blenderproc
+    - bokeh
+    - distinctipy
+    - einops
+    - ffmpeg
+    - fvcore
+    - gdown
+    - hydra-colorlog
+    - hydra-core
+    - iopath
     - joblib==1.4.2
-    - matplotlib==3.9.4
+    - matplotlib
     - nvisii==1.1.72
-    - omegaconf==2.3.0
-    - onnx==1.17.0
-    - onnxruntime==1.19.2
+    - omegaconf
+    - onnx
+    - onnxruntime
     - open3d==0.19.0
-    - opencv-python==4.11.0.86
+    - opencv-python
     - panda3d==1.11.0.dev3233
     - peft==0.14.0
     - pinocchio==0.4.3
     - pip==25.0
-    - pycocotools==2.0.8
+    - pycocotools
     - pypng==0.20220715.0
-    - pyrender==0.1.45
+    - pyrender
     - pyrr==0.10.3
     - pytorch-lightning==1.8.1
     - roma==1.5.1
-    - ruamel.yaml==0.18.10
+    - ruamel.yaml
     - scikit-image==0.24.0
-    - scipy==1.13.1
+    - scipy
     - seaborn==0.13.2
     - simplejson==3.19.3
-    - torch==2.0.0
+    - torch
     - torchmetrics==0.10.3
-    - torchvision==0.15.1
+    - torchvision
     - transforms3d==0.4.2
-    - wandb==0.19.4
+    - wandb
     - webdataset==0.2.100
     - xatlas==0.0.9
     - xformers==0.0.18

@@ -421,7 +421,7 @@ def load_test_list_and_cnos_detections(
             f"Dataset {dataset_name} is not supported with default detections!"
         )
     cnos_dets_dir = (
-        root_dir / dataset_name / "default_detections" / f"core{year}_model_based_unseen/" / det_model
+        root_dir / "default_detections" / f"core{year}_model_based_unseen/" / det_model
     )
     # list all detections and take the one matching the dataset_name
     avail_det_files = os.listdir(cnos_dets_dir)

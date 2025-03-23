@@ -137,7 +137,7 @@ class WebSceneDataset(SceneDataset):
         )
 
     def load_frame_index(self) -> pd.DataFrame:
-        key_to_shard = inout.load_json(self.wds_dir / "key_to_shard.json")
+        key_to_shard = inout.load_json(str(self.wds_dir / "key_to_shard.json"))
         keys, shard_fnames = [], []
         for key, shard_fname in key_to_shard.items():
             keys.append(key)

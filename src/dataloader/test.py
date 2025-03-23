@@ -60,7 +60,7 @@ class GigaPoseTestSet(GigaPoseTrainSet):
         self.model_name = 'models'
         self.split = 'val' # TODO. val when training, test when testing
         self.batch_size = batch_size
-        self.root_dir = Path('./gigaPose_datasets/datasets/')
+        self.root_dir = Path(root_dir)
         self.dataset_name = dataset_name
         self.transforms = transforms
         if self.transforms.rgb_augmentation:
@@ -75,7 +75,7 @@ class GigaPoseTestSet(GigaPoseTrainSet):
 
         # load the template dataset
         model_infos = inout.load_json(
-            self.dataset_dir / self.model_name / "models_info.json"
+            str(self.dataset_dir / self.model_name / "models_info.json")
         )
 
         template_config.dir += f"/{self.dataset_name}"

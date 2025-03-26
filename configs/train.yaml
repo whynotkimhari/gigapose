@@ -1,6 +1,6 @@
 defaults:
   - user: default
-  - machine: local
+  - machine: slurm
   - callback: base
   - model: large
   - data: all
@@ -10,7 +10,7 @@ save_dir: ${machine.root_dir}/results/${name_exp}
 name_exp: train
 use_pretrained: true 
 
-train_dataset_id: 0 # 0 for gso, 1 for shapenet, 2 for both
+train_dataset_id: # 0 for gso, 1 for shapenet, 2 for both
 nets_to_train: all
 
 # parameters for rendering templates for training
